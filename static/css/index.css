@@ -3,7 +3,6 @@ html, body {
 	font-family: Baskerville;
 	text-align: center;
 	font-size: 14px;
-	line-height: 1;
 	color: #2f3f6f;
 }
 
@@ -71,7 +70,6 @@ h1 {
 .item {
 	width: 100%;
 	position: relative;
-	display: table;
 }
 
 .item-header {
@@ -83,13 +81,17 @@ h1 {
 .item-name {
 	display: inline-block;
 	font-size: 30px;
+	vertical-align: baseline;
+	text-align: left;
+	width: 50%;
 }
 
 .item-time {
 	display: inline-block;
 	font-size: 20px;
-	bottom: 0;
-	vertical-align: bottom;
+	vertical-align: baseline;
+	text-align: right;
+	width: 50%;
 }
 
 
