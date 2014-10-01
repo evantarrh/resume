@@ -1,3 +1,98 @@
-body {
-	font-size: 40px;
+html, body {
+	background-color: #f3f3f3;
+	font-family: Baskerville;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1;
+	color: #2f3f6f;
+}
+
+.wrapper {
+	text-align: center;
+	width: 700px;
+	margin: 50px auto auto auto;
+}
+
+h1 {
+	margin: auto;
+	font-size: 70px;
+	font-weight: normal;
+}
+
+.kerning-1 {
+	letter-spacing: -6px;
+}
+
+.kerning-2 {
+	letter-spacing: -1px;
+}
+
+.main-header {
+	width: auto;
+	text-align: center;
+	display: inline-block;
+}
+
+.header-info {
+	width: 100%;
+	font-size: 18px;
+}
+
+.header-info > span {
+	display: inline-block;
+	font-size: 20px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.separator {
+	width: 100%;
+	height: 0;
+	border: 1px solid #643;
+	margin: 30px 0 0 0;
+}
+
+.category {
+	text-align: left;
+	font-family: Raleway;
+	font-weight: 600;
+	color: #643;
+	margin: 5px 0 10px 0;
+	font-size: 18px;
+	width: 100%;
+}
+
+.item {
+	width: 100%;
+	position: relative;
+	display: table;
+}
+
+.item-header {
+	width: 100%;
+	position: relative;
+	display: table;
+}
+
+.item-name {
+	display: inline-block;
+	font-size: 30px;
+}
+
+.item-time {
+	display: inline-block;
+	font-size: 20px;
+	bottom: 0;
+	vertical-align: bottom;
+}
+
+
+@media print {
+	/*do this later*/
 }
