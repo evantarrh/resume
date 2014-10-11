@@ -4,6 +4,7 @@ html, body {
 	text-align: center;
 	font-size: 18px;
 	color: #31417a;
+	text-rendering: optimizeLegibility;
 }
 
 a {
@@ -15,6 +16,10 @@ a {
 	text-align: center;
 	width: 700px;
 	margin: 50px auto 70px auto;
+}
+
+.grey {
+	color: #b0b0b5;
 }
 
 h1 {
@@ -83,12 +88,20 @@ h1 {
 	display: table;
 }
 
-.item-name, item-name > a {
+.item-name {
 	display: inline-block;
 	font-size: 28px;
 	vertical-align: baseline;
 	text-align: left;
 	width: 50%;
+}
+
+.item-name > a {
+	color: #b0b0b5;
+	font-size: 14px;
+	font-family: Montserrat;
+	font-weight: 400;
+	vertical-align: baseline;
 }
 
 .item-time {
