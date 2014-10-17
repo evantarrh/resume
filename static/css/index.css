@@ -1,4 +1,5 @@
 html, body {
+	-webkit-print-color-adjust:exact;
 	background-color: #f3f3f3;
 	font-family: Baskerville;
 	text-align: center;
@@ -16,10 +17,6 @@ a {
 	text-align: center;
 	width: 700px;
 	margin: 50px auto 70px auto;
-}
-
-.grey {
-	color: #b0b0b5;
 }
 
 h1 {
@@ -127,5 +124,45 @@ h1 {
 
 
 @media print {
-	/*do this later*/
+	html, body {
+		-webkit-print-color-adjust:exact;
+		print-color-adjust: exact;
+		background-color: #fff;
+		color: #000;
+		font-size: 12pt;
+		line-height: 21px;
+		margin: 0;
+	}
+	a {
+		color: #000;
+	}
+	h1 {
+		margin: auto;
+		font-size: 40pt;
+		line-height: normal;
+	}
+	.wrapper {
+		margin: 0 auto auto auto;
+	}
+	.item-name > a, .category {
+		color: #ccc;
+	}
+	.separator {
+		margin: 15px 0 0 0;
+		border-bottom: 2px solid #ccc;
+	}
+	.item-name {
+		font-size: 18pt;
+		line-height: 20pt;
+	}
+	.item-info {
+		line-height: 22px;
+	}
+	.print-off {
+		margin: 10px 0 0 0;
+	}
+	.main-header {
+		width: 330px;
+	}
+
 }
