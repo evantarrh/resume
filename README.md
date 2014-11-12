@@ -1,6 +1,6 @@
-Evan's resume
+Resume
 =============
 
-A resume written in HTML and CSS, for your hiring pleasure.
+### A resume written in HTML and CSS, for your hiring pleasure.
 
-Will be viewable at some point in the future.
+Viewable at [evantarrh.com/resume](evantarrh.com/resume).
