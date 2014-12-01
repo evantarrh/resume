@@ -3,4 +3,4 @@ Resume
 
 #### A resume written in HTML and CSS, for your hiring pleasure.
 
-Viewable at [evantarrh.com/resume.](evantarrh.com/resume)
+Viewable at [evantarrh.com/resume.](http://evantarrh.com/resume)
