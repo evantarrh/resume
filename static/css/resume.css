@@ -1,10 +1,13 @@
+/* Oh god this CSS is so bad. If you are reading this I am deeply sorry. */
+
 html, body {
 	-webkit-print-color-adjust:exact;
-	background-color: #ccc;
+	background-color: #fbfbfc;
 	font-family: Baskerville;
 	font-size: 18px;
 	color: #31417a;
 	text-rendering: optimizeLegibility;
+	margin: 0;
 }
 
 a {
@@ -16,9 +19,10 @@ p {
 	margin: 0;
 }
 
-.wrapper {
-	width: 700px;
-	margin: 50px auto 70px auto;
+.content {
+   position: relative;
+   max-width: 700px;
+   margin: 0 auto;
 }
 
 h1, h2 {
@@ -29,7 +33,6 @@ h1, h2 {
 h1 {
 	font-size: 70px;
 	line-height: 70px;
-	transition: 0.3s ease all;
 	text-shadow: 2px 2px 3px #ccc;
 }
 
@@ -39,6 +42,15 @@ h2 {
 	font-size: 24px;
 	letter-spacing: 2px;
 	transition: 0.15s ease all;
+	text-transform: lowercase;
+}
+
+.mobile-alert {
+	display: none;
+}
+
+#sub {
+	height: 29px;
 }
 
 .kerning-1 {
@@ -56,18 +68,6 @@ h2 {
 	margin-bottom: 15px;
 }
 
-.contact {
-	line-height: 25px
-}
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
 .right-text {
 	text-align: right;
 }
@@ -79,7 +79,7 @@ h2 {
 }
 
 .separator {
-	border-bottom: 2px solid #b0b0b5;	
+	border-bottom: 2px solid #b0b0b5;
 }
 
 .foot {
@@ -104,7 +104,8 @@ h2 {
 .item {
 	position: relative;
 	width: 100%;
-	padding-bottom: 5px;
+	padding-bottom: 8px;
+	padding-top: 5px;
 }
 
 .item-header {
@@ -112,6 +113,7 @@ h2 {
 	display: table;
 	width: 100%;
 	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .item-name {
@@ -135,8 +137,7 @@ h2 {
 	display: inline-block;
 	font-size: 20px;
 	vertical-align: baseline;
-	text-align: right;
-	width: 40%;
+	float: right;
 }
 
 .item-list {
@@ -211,21 +212,10 @@ h2 {
 	display: none;
 }
 
-.print-area {
-   width: 850px;
-   height: 1100px;
-   @include border-box;
-   position: relative;
-   background-color: white;
-}
-
-.content {
-   position: relative;
-}
-
 @media screen {
    .print-area {
-       margin: 3rem auto;
+	 		margin-top: 2rem;
+	 		margin-bottom: 4rem;
    }
 }
 
@@ -233,14 +223,25 @@ h2 {
 	html, body {
 		-webkit-print-color-adjust:exact;
 		print-color-adjust: exact;
-		background-color: #ccc;
 		color: #000;
 		font-size: 12pt;
 		line-height: 21px;
 		margin: 0;
 	}
+	.print-area {
+	   width: 850px;
+	   height: 1100px;
+	   position: relative;
+	   background-color: white;
+	}
+	.content {
+		max-width: 100%;
+	}
 	a {
 		color: #000;
+	}
+	h1 > a, h2 {
+		color: #31417a;
 	}
 	.main-header {
 		width: 100%;
@@ -251,7 +252,7 @@ h2 {
 	h1 {
 		position: absolute;
 		left: 0;
-		bottom: 25px;
+		bottom: 22px;
 		font-size: 40px;
 		line-height: 0;
 		text-shadow: none;
@@ -265,7 +266,7 @@ h2 {
 		position: absolute;
 		right: 0;
 		line-height: 0;
-		bottom: 19px;
+		bottom: 16px;
 		text-align: right;
 	}
 	h2 {
@@ -275,19 +276,23 @@ h2 {
 		padding: 40px 95px;
 	}
 	.item-name > a, .category {
-		color: #ccc;
+		color: #bbb;
 		line-height: 21px;
 	}
 	.item {
 		padding: 0;
 	}
+	.foot > a {
+		color: #31417a;
+	}
+
 	.category {
 		margin-bottom: 5px;
-		color: #ccc;
+		color: #bbb;
 	}
 	.separator {
 		margin: 15px 0 0 0;
-		border-bottom: 2px solid #ccc;
+		border-bottom: 2px solid #bbb;
 	}
 	.item-name {
 		font-size: 22px;
@@ -300,8 +305,11 @@ h2 {
 	.item-time {
 		font-size: 18px;
 	}
+	.item-header {
+		padding-bottom: 0;
+	}
 	.print-off {
-		margin: 10px 0 0 0;
+		margin: 0;
 	}
 	.dont-print {
 		display:none;
@@ -313,4 +321,38 @@ h2 {
 		display: inline;
 	}
 
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-alert {
+    display: block;
+    position: fixed;
+    top: 0;
+    font-family: Montserrat;
+    color: #fff;
+    background-color: #31417a;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 5%;
+    width: 90%;
+    z-index: 5;
+    text-align: center;
+  }
+
+	.mobile-alert a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.mobile-alert .butt {
+		color: #fff;
+		position: static;
+		line-height: 15px;
+		display: inline-block;
+		transform: translateY(25%);
+	}
+
+	.main-header {
+		margin-top: 40px;
+	}
 }
