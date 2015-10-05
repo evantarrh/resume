@@ -5,14 +5,14 @@ html, body {
 	background-color: #fbfbfc;
 	font-family: Baskerville;
 	font-size: 18px;
-	color: #31417a;
+	color: #314B8F;
 	text-rendering: optimizeLegibility;
 	margin: 0;
 }
 
 a {
 	text-decoration: none;
-	color: #31417a;
+	color: #314B8F;
 }
 
 p {
@@ -33,7 +33,7 @@ h1, h2 {
 h1 {
 	font-size: 70px;
 	line-height: 70px;
-	text-shadow: 2px 2px 3px #ccc;
+	text-shadow: 2px 2px 3px #c0c0d5;
 }
 
 h2 {
@@ -83,7 +83,7 @@ h2 {
 }
 
 .foot {
-	border-bottom: 2px solid #31417a;
+	border-bottom: 2px solid #314B8F;
 	font-variant: small-caps;
 	font-family: Montserrat;
 	font-size: 20px;
@@ -241,7 +241,7 @@ h2 {
 		color: #000;
 	}
 	h1 > a, h2 {
-		color: #31417a;
+		color: #314B8F;
 	}
 	.main-header {
 		width: 100%;
@@ -282,10 +282,12 @@ h2 {
 	.item {
 		padding: 0;
 	}
-	.foot > a {
-		color: #31417a;
+	.foot {
+		border-bottom: 2px solid #314B8F;
 	}
-
+	.foot > a {
+		color: #314B8F;
+	}
 	.category {
 		margin-bottom: 5px;
 		color: #bbb;
@@ -295,11 +297,17 @@ h2 {
 		border-bottom: 2px solid #bbb;
 	}
 	.item-name {
-		font-size: 22px;
-		line-height: 22px;
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.item-name > a {
+		line-height: 20px;
+		font-size: 12px;
+		padding-left: 4px;
 	}
 	.item-info {
-		line-height: 22px;
+		font-size: 15px;
+		line-height: 21px;
 		max-width: 600px;
 	}
 	.item-time {
@@ -330,7 +338,7 @@ h2 {
     top: 0;
     font-family: Montserrat;
     color: #fff;
-    background-color: #31417a;
+    background-color: #314B8F;
     font-size: 14px;
     line-height: 20px;
     padding: 10px 5%;
