@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('.bonus').one("click", function() {
+    $('.easter-egg-1').css({display : 'list-item'});
     $('.easter-egg-1').animate({
         opacity : 1,
         height  : '25px',

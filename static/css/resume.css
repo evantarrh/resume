@@ -156,20 +156,20 @@ h2 {
 .download-pdf {
 	position: fixed;
 	bottom: 16px;
-	right: 50px;
+	right: 32px;
 	cursor: pointer;
 }
 
-.download-pdf .butt {
+.download-pdf .point {
 	top: -7px;
 }
 
-.fart {
+.at {
 	font-size: 14px;
 	vertical-align: middle;
 }
 
-.butt {
+.point {
 	position: absolute;
 	top: 10px;
 	margin-left: 5px;
@@ -179,6 +179,11 @@ h2 {
 .inline-link {
 	color: #999;
 	text-decoration: none;
+}
+
+.inline-link:hover {
+	box-shadow: 0 2px #b0b0b5;
+	padding-bottom: 2px;
 }
 
 .inline-link:hover::after{
@@ -191,7 +196,7 @@ h2 {
 	font-size: 22px;
 }
 
-.butt-inline {
+.point-inline {
 	position: relative;
 	top: 4px;
 	color: #999;
@@ -203,6 +208,7 @@ h2 {
 }
 
 .easter-egg-1 {
+	display: none;
 	opacity: 0;
 	height: 0;
 	padding: 0;
@@ -216,6 +222,29 @@ h2 {
    .print-area {
 	 		margin-top: 2rem;
 	 		margin-bottom: 4rem;
+   }
+   .item-name > a::after {
+   		content: " \261E";
+   		position: relative;
+			top: 3px;
+			font-size: 22px;
+   }
+   .download-pdf::after {
+   		content: " \261E";
+   		position: relative;
+			top: 3px;
+			font-size: 22px;
+   }
+   .download-pdf:hover {
+   		box-shadow: 0 2px #b0b0b5;
+   }
+   .item-name > a:hover {
+   		box-shadow: 0 2px #b0b0b5;
+   		padding-bottom: 2px;
+   }
+   .foot > a:hover {
+   		box-shadow: 0 2px #314B8F;
+   		padding-bottom: 2px;
    }
 }
 
@@ -305,6 +334,7 @@ h2 {
 		font-size: 12px;
 		padding-left: 4px;
 	}
+
 	.item-info {
 		font-size: 15px;
 		line-height: 21px;
@@ -352,7 +382,7 @@ h2 {
 		text-decoration: underline;
 	}
 
-	.mobile-alert .butt {
+	.mobile-alert .point {
 		color: #fff;
 		position: static;
 		line-height: 15px;
