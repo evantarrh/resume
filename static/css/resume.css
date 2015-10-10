@@ -155,9 +155,10 @@ h2 {
 
 .download-pdf {
 	position: fixed;
-	bottom: 16px;
+	bottom: 20px;
 	right: 32px;
 	cursor: pointer;
+	line-height: 22px;
 }
 
 .download-pdf .point {
