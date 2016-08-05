@@ -31,18 +31,28 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 70px;
-	line-height: 70px;
-	text-shadow: 2px 2px 3px #c0c0d5;
+	font-family: Montserrat;
+	font-size: 26px;
+	line-height: 40px;
+	padding-top: 1rem;
 }
 
 h2 {
 	font-family: Montserrat;
-	font-variant: small-caps;
-	font-size: 24px;
-	letter-spacing: 2px;
-	transition: 0.15s ease all;
-	text-transform: lowercase;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #314B8F;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-top: 5px;
+	margin-bottom: 0;
 }
 
 .mobile-alert {
@@ -54,7 +64,7 @@ h2 {
 }
 
 .kerning-1 {
-	letter-spacing: -6px;
+	letter-spacing: -1px;
 }
 
 .kerning-2 {
@@ -65,7 +75,7 @@ h2 {
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 .right-text {
@@ -113,12 +123,11 @@ h2 {
 	display: table;
 	width: 100%;
 	padding-top: 5px;
-	padding-bottom: 5px;
 }
 
 .item-name {
 	display: inline-block;
-	font-size: 28px;
+	font-size: 24px;
 	vertical-align: baseline;
 	text-align: left;
 	width: 60%;
@@ -145,12 +154,26 @@ h2 {
 }
 
 .item-list > ul {
+	list-style-type: none;
 	margin: 5px 0;
+	padding-left: 32px;
 }
 
 .item-info {
-	padding: 2px 0;
 	line-height: 25px;
+	padding: 2px 0;
+	position: relative;
+}
+
+.item-info:before {
+	content: '';
+	background-color: #000;
+	border-radius: 3px;
+	height: 3px;
+	left: -10px;
+	position: absolute;
+	top: 11px; /* trust me :') */
+	width: 3px;
 }
 
 .download-pdf {
@@ -270,43 +293,23 @@ h2 {
 	a {
 		color: #000;
 	}
+	h1 {
+		padding-top: 0;
+	}
 	h1 > a, h2 {
 		color: #314B8F;
 	}
 	.main-header {
-		width: 100%;
-		position: relative;
-		margin: 0;
-		height: 60px;
-	}
-	h1 {
-		position: absolute;
-		left: 0;
-		bottom: 22px;
-		font-size: 40px;
-		line-height: 0;
-		text-shadow: none;
-		float: left;
-		display: inline-block;
+		margin-bottom: 25px;
 	}
 	.kerning-1 {
 		letter-spacing: -2px;
-	}
-	.subheader {
-		position: absolute;
-		right: 0;
-		line-height: 0;
-		bottom: 16px;
-		text-align: right;
-	}
-	h2 {
-		font-size: 20px;
 	}
 	.content {
 		padding: 40px 95px;
 	}
 	.item-name > a, .category {
-		color: #bbb;
+		color: #aaa;
 		line-height: 21px;
 	}
 	.item {
@@ -319,16 +322,17 @@ h2 {
 		color: #314B8F;
 	}
 	.category {
+		font-size: 16px;
+		color: #aaa;
 		margin-bottom: 5px;
-		color: #bbb;
 	}
 	.separator {
 		margin: 15px 0 0 0;
-		border-bottom: 2px solid #bbb;
+		border-bottom: 2px solid #aaa;
 	}
 	.item-name {
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 18px;
+		line-height: 18px;
 	}
 	.item-name > a {
 		line-height: 20px;
@@ -337,12 +341,12 @@ h2 {
 	}
 
 	.item-info {
-		font-size: 15px;
-		line-height: 21px;
+		font-size: 14px;
+		line-height: 20px;
 		max-width: 600px;
 	}
 	.item-time {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.item-header {
 		padding-bottom: 0;
