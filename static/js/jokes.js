@@ -15,6 +15,4 @@ $(document).ready(function(){
   $('.easter-egg-2').click(function(){
     $('.easter-egg-1').css({ fontSize : big++ + 'px'})
   });
-
-  console.log("What are you doing over here? Get out of here.");
 });
